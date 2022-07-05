@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fdf8c977f5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Weather-Dash</title>
 </head>
 
 <body>
@@ -18,6 +22,7 @@
 
     <main class="container dashboard">
         <div class="row p-2">
+
             <div class="col-sm12 col-md-9 order-md-2">
                 <div class="row">
                     <!--current weather-->
@@ -45,7 +50,7 @@
                                             <span class="fiveDay-temp"> &deg;F</span></p>
                                         <p class="card-subtitle mb-2 text-muted">Wind: 
                                             <span id="fiveDay-wind">MPH</span></p> 
-                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-hum">%</span></p>       
+                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-humid">%</span></p>       
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +65,7 @@
                                     <span class="fiveDay-temp"> &deg;F</span></p>
                                 <p class="card-subtitle mb-2 text-muted">Wind: 
                                     <span id="fiveDay-wind">MPH</span></p> 
-                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-hum">%</span></p>       
+                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-humid">%</span></p>       
                             </div>
                         </div>
                     </div>
@@ -73,7 +78,7 @@
                                     <span class="fiveDay-temp"> &deg;F</span></p>
                                 <p class="card-subtitle mb-2 text-muted">Wind: 
                                     <span id="fiveDay-wind">MPH</span></p> 
-                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-hum">%</span></p>       
+                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-humid">%</span></p>       
                             </div>
                         </div>
                     </div>
@@ -86,7 +91,7 @@
                                     <span class="fiveDay-temp"> &deg;F</span></p>
                                 <p class="card-subtitle mb-2 text-muted">Wind: 
                                     <span id="fiveDay-wind">MPH</span></p> 
-                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-hum">%</span></p>       
+                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-humid">%</span></p>       
                             </div>
                         </div>
                     </div> 
@@ -99,13 +104,37 @@
                                     <span class="fiveDay-temp"> &deg;F</span></p>
                                 <p class="card-subtitle mb-2 text-muted">Wind: 
                                     <span id="fiveDay-wind">MPH</span></p> 
-                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-hum">%</span></p>       
+                                <p class="card-subtitle mb-2 text-muted">Humidity: <span id="fiveDay-humid">%</span></p>       
                             </div>
                         </div>
                     </div>                            
                 </div>
             </div>
-        </div>      
+        </div>
+        
+        <div class="col-sm-12 col-md-3 left-panel order-md-1">
+            <form>
+                <div class="for-row">
+                    <div class="form-group col-8">
+                        <label for="city-input">Search for a City:</label>
+                        <input type="text" placeholder="City" class="form-control" id="city-input">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2 align-text-center" id="search-btn">Search <i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row recent-searches mt-3">
+                <div class="col-sm-12">
+                    <h2>Recent searches:</h2>
+                </div>
+            </div>
+            <div class="row cityList m-0">
+
+            </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
