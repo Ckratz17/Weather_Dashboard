@@ -18,20 +18,38 @@
        <!--Search weather-->
     <main class="container-fluid">
         <div class="row">
-            <div class="col-3">
-                <h4>Search for a City:</h4>
-                <input class="form-control" type="text" id="cityInput"
-                    placeholder="Orlando, Fl">
-                <button class="btn btn-primary" type="button" id="searchBtn">Search</button>
+            <div class="col-3" id="searchResults">
+                <div class="row">
+                    <h4>Search for a City:</h4>
+                    <input class="form-control" type="text" id="cityInput"
+                        placeholder="Orlando, Fl">
+                    <button class="btn btn-primary" type="button" id="searchBtn">Search</button>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <ul class="list-group" id="searchHistory">
+                        <!--search history results-->
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-9 current">
-                <h3>City and Date</h1>
-                <p class="temp">Temp: F</p>
-                <p class="wind">Wind: MPH</p>
-                <p class="humidity">Humidity: %</p>
-                <p class="uvIndex">UV Index:</p>
+
+            <div class="col-9 pb04 pt-4" id="currentWeather">
+                <div class row pb-3 mr-2 ml-2>
+                    <div class="col-12 border rounded px-3 py-3" id="cityInfo">
+                        <!--Current Weather-->
+                    </div>
+                </div>
+                <div class="row pb-2 pt-1">
+                    <div class="col-12 ml-2">
+                        <h3>5 Day Forecast:</h3>
+                    </div>
+                </div>
+                <div class="row pl-2" id="fiveDay">
+                    <!--5 Day Forecast-->
+                </div>
             </div>
-        </div>
+        </div>       
     </main>
         
     
