@@ -1,0 +1,16 @@
+header {
+    background-image: linear-gradient(rgb(88, 88, 245), rgb(3, 3, 162));
+    color: #fff;
+    height: 80px;
+    padding-top: 5px;
+}
+
+.current {
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    width: inherit;
+    margin: 15px 0;
+}
