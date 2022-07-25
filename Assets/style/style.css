@@ -5,6 +5,10 @@ header {
     padding-top: 5px;
 }
 
+.border-bottom {
+    border-bottom: 2px solid;
+}
+
 .current {
     border: 1px solid;
     margin-top: 10px;
